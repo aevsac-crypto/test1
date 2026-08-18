@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Madrid CF | Página Oficial</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <a href="#" class="logo">
+        <span class="logo-badge">RM</span>
+        <span class="logo-text">REAL MADRID</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#plantilla">Plantilla</a>
+        <a href="#estadio">Estadio</a>
+        <a href="#trofeos">Trofeos</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>¡Hala Madrid!</h1>
+      <p>El club más laureado del mundo. Pasión, historia y leyenda desde 1902.</p>
+      <a href="#trofeos" class="btn btn-gold">Descubre nuestra historia</a>
+    </div>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section id="noticias" class="section">
+    <div class="container">
+      <h2 class="section-title">Últimas Noticias</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-banner" style="background-image: url('https://picsum.photos/seed/rm1/400/220');"></div>
+          <div class="card-body">
+            <span class="tag">Primer Equipo</span>
+            <h3>Victoria en el Santiago Bernabéu</h3>
+            <p>El Real Madrid suma tres puntos clave en La Liga con una actuación brillante.</p>
+            <button class="btn btn-outline read-more" data-modal="noticia1">Leer más</button>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-banner" style="background-image: url('https://picsum.photos/seed/rm2/400/220');"></div>
+          <div class="card-body">
+            <span class="tag">Champions League</span>
+            <h3>Camino a la Decimosexta</h3>
+            <p>El equipo se prepara para la próxima eliminatoria europea con la vista puesta en la gloria.</p>
+            <button class="btn btn-outline read-more" data-modal="noticia2">Leer más</button>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-banner" style="background-image: url('https://picsum.photos/seed/rm3/400/220');"></div>
+          <div class="card-body">
+            <span class="tag">Cantera</span>
+            <h3>La Fábrica sigue creciendo</h3>
+            <p>Los jóvenes talentos de Valdebebas demuestran que el futuro está asegurado.</p>
+            <button class="btn btn-outline read-more" data-modal="noticia3">Leer más</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANTILLA -->
+  <section id="plantilla" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Estrellas del Equipo</h2>
+      <div class="players-grid">
+        <div class="player-card">
+          <div class="player-number">9</div>
+          <h3>Delantero</h3>
+          <p>El líder del ataque blanco, referencia en el área y máximo goleador.</p>
+        </div>
+        <div class="player-card">
+          <div class="player-number">5</div>
+          <h3>Centrocampista</h3>
+          <p>El cerebro del mediocampo, visión de juego y precisión en el pase.</p>
+        </div>
+        <div class="player-card">
+          <div class="player-number">1</div>
+          <h3>Portero</h3>
+          <p>La última muralla, reflejos felinos y seguridad bajo los palos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTADIO -->
+  <section id="estadio" class="section">
+    <div class="container">
+      <h2 class="section-title">El Templo</h2>
+      <div class="stadium-box">
+        <h3>Santiago Bernabéu</h3>
+        <p>Inaugurado en 1947, con una capacidad de más de 81.000 espectadores, el estadio más emblemático del fútbol mundial.</p>
+        <a href="#" class="btn btn-gold" id="btnGira">Reservar visita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TROFEOS -->
+  <section id="trofeos" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Palmarés</h2>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">15</span>
+          <span class="stat-label">Champions League</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">36</span>
+          <span class="stat-label">La Liga</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">20</span>
+          <span class="stat-label">Copa del Rey</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Mundial de Clubes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section newsletter">
+    <div class="container">
+      <h2>Únete a la familia madridista</h2>
+      <p>Recibe las últimas noticias y ofertas exclusivas en tu correo.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Tu correo electrónico" required>
+        <button type="submit" class="btn btn-gold">Suscribirme</button>
+      </form>
+      <p class="form-message" id="formMessage"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <span class="logo-badge">RM</span>
+        <p>© 2026 Real Madrid Club de Fútbol. Proyecto de demostración educativa.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#plantilla">Plantilla</a>
+        <a href="#estadio">Estadio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="noticiaModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+      <h2 id="modalTitle">Título</h2>
+      <p id="modalBody">Contenido de la noticia.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
